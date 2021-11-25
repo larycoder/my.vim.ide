@@ -38,3 +38,4 @@ It is nodejs based plugin, but well, it good for me.
 Note: if you install through CocInstall --> stored in "~/.config/coc/extensions/node_modules"
 
 1. coc-flutter
+2. coc-clangd (for connect clangd to coc) + clang (for clangd)
