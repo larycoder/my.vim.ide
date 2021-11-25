@@ -1,8 +1,8 @@
 # What do you NOT like in default VIM:
-- auto indent bad
-- not have completion
-- not have reformat
-- bad color highlight
+- auto indent bad               -> Look good for now
+- not have completion           -> Now having one
+- not have reformat             -> There are plan for it
+- bad color highlight           -> Syntax wonderful now
 
 # OK, next jobs:
 
