@@ -6,7 +6,7 @@ Following some fancy website about vim, I have this:
 Plug 'vim-airline/vim-airline'
 ```
 
-Very worst to install it for looking useful status, It status is a bit colorful for me, I will deal with it later ;-)
+Very worth to install it for looking useful status, It status is a bit colorful for me, I will deal with it later ;-)
 
 # List buffer
 
