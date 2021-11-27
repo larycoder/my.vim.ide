@@ -24,6 +24,7 @@ Tired of ":ls" commend every times, solution:
 
 ```
 Plug 'bling/vim-bufferline'
+let g:bufferline_echo=0         => set buffer echo to 0 so it not interfere with another notify
 ```
 
 Just installed it, present a bit messy and somehow have bad compatible with vim-airline, but it is fantasy for small amount of buffer
