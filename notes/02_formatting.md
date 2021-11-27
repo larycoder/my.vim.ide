@@ -9,7 +9,8 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin uses outside formate program to finish its job
 Below is list of format program installed:
 
-- astyle (>= 2.0.5) : C, C++, Java
+- clang             : (clang-format) C, C++, Objective-C, Protobuf, etc. (C family)
+- astyle            : C, C++, C# and java (main is java)
 - dartfmt           : Dart (Part of Dart SDK)
 
 # Map shortcut
