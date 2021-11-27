@@ -11,3 +11,10 @@ Plug 'junegunn/fzf.vim' => add this to vim-plug
 
 Then try to read manual to play with it, if you like some blog, here is good:
 https://levelup.gitconnected.com/improving-vim-workflow-with-fzf-3f8bedaca1b2
+
+# Quick Start
+
+After installing enough plugin and package, you can use 2 mains command:
+
+1. :Files => search file name
+2. :Rg    => ripgrep search => search content
