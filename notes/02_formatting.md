@@ -22,3 +22,17 @@ map <C-L> :Autoformat
 ```
 
 Note: Autoformat is script of vim-autoformat
+
+Some interesting configuration:
+```
+" Dart formatter folder
+let g:formatterpath = ["/opt/flutter/bin/cache/dart-sdk/bin"]
+
+" bindkey
+nmap <C-L> :Autoformat<CR>
+
+" verbose autoformat log (0 - none, 1- only error, 2 - all)
+let g:autoformat_verbosemode=2
+```
+
+Should read more carefully on plugin README, there are bunch of configuration guideline in there.
