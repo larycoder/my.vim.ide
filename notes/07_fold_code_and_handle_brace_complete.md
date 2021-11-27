@@ -23,3 +23,6 @@ Plug 'jiangmiao/auto-pairs'
 ```
 
 Fast test look good for me !
+
+--> this auto-pairs work not too well, I'm checking on coc vim plugin, it seen that coc vim support well for brace enter => so this
+plugin is not actually necessary.

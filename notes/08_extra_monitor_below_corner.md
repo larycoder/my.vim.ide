@@ -28,6 +28,3 @@ Plug 'bling/vim-bufferline'
 
 Just installed it, present a bit messy and somehow have bad compatible with vim-airline, but it is fantasy for small amount of buffer
 For large one, maybe you should use ":ls" --> note: buffer number is always increasing event if you totally delete buffer, accept it.
-
---> this list buffer work not too well, I'm checking on coc vim plugin, it seen that coc vim support well for brace enter => so this
-plugin is not actually necessary.
