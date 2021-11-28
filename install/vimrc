@@ -1,0 +1,28 @@
+" enable vim default
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+" load configure from vimrc.d
+for f in split(glob("<VIMDIR>/vimrc.d/*.vim"))
+        exe "source" f
+endfor
+
+" Plug Manager
+" Plugins will be download under plugged directory
+call plug#begin("<VIMDIR>/plugged")
+
+" Declare the list of plugins
+" from Github: "username/repo"
+" from local : "file:///path-to-file"
+" from url   : "url"
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Chiel92/vim-autoformat'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+Plug 'tpope/vim-vinegar'
+Plug 'junegunn/fzf.vim'
+
+" List ends here. Plugins become visible to Vim after this call
+call plug#end()
