@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # global parameters
-VIMDIR="~/.vim"
+VIMDIR="$HOME/.vim"
 
 # setup usage function
 function usage() {
@@ -40,7 +40,7 @@ function saveConfig() {
 }
 
 # call install plugins
-function exeCommand() {
+function exeCommand() { # still have big bug
     echo "Start to exec vim command in command_list...";
     TEMP=/tmp/.vim_ide_randrom.$;
     vim -s ./command_list.txt $TEMP;
@@ -58,7 +58,7 @@ case $1 in
     *)
         args $@;
         saveConfig;
-        exeCommand;
+        #exeCommand;
         echo "Everything is done.";
         ;;
 esac
