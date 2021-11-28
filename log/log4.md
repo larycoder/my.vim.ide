@@ -5,5 +5,5 @@
 
 # Some thing for update:
 
-- Try to open terminal as NERDTree (now, term is open very bad position and not cross-tab --> I do not like it)
-- Add extra info bottom corner screen of vim to monitor
+- Try to open terminal as NERDTree (now, term is open very bad position and not cross-tab --> I do not like it) => I accept it now so remove this.
+- Add extra info bottom corner screen of vim to monitor                                   --> done it.
