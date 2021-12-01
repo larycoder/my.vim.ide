@@ -39,3 +39,4 @@ Note: if you install through CocInstall --> stored in "~/.config/coc/extensions/
 
 1. coc-flutter
 2. coc-clangd (for connect clangd to coc) + clang (for clangd)
+3. coc-pyright (support python)
