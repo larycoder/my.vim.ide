@@ -1,6 +1,6 @@
 " enable vim default
-"unlet! skip_defaults_vim
-"source $VIMRUNTIME/defaults.vim
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
 
 " load configure in vimrc.d
 for f in split(glob("~/.vim/vimrc.d/*.vim"), '\n')
