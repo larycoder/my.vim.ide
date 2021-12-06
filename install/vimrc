@@ -27,6 +27,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'junegunn/fzf.vim'
+Plug '907th/vim-auto-save'
 
 " List end here. Plugin visible to vim after this call
 call plug#end()
