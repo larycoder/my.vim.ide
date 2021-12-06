@@ -1,8 +1,5 @@
-" Dart formatter folder
-let g:formatterpath = ["/opt/flutter/bin/cache/dart-sdk/bin"]
+" map format call to Crtl-L
+map <C-L> :Autoformat<CR>
 
-" bindkey
-nmap <C-L> :Autoformat<CR>
-
-" verbose autoformat log (0 - none, 1- only error, 2 - all)
+" verbose autoformat log
 let g:autoformat_verbosemode=2

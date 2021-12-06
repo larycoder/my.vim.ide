@@ -1,28 +1,32 @@
 " enable vim default
-unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+"unlet! skip_defaults_vim
+"source $VIMRUNTIME/defaults.vim
 
-" load configure from vimrc.d
-for f in split(glob("<VIMDIR>/vimrc.d/*.vim"))
+" load configure in vimrc.d
+for f in split(glob("~/.vim/vimrc.d/*.vim"), '\n')
         exe "source" f
 endfor
 
-" Plug Manager
-" Plugins will be download under plugged directory
-call plug#begin("<VIMDIR>/plugged")
+" vim-plug manager
+" Following vim-plug tutorial
+"
+" Plugin download directory
+call plug#begin("~/.vim/pluged")
 
-" Declare the list of plugins
-" from Github: "username/repo"
-" from local : "file:///path-to-file"
-" from url   : "url"
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'Chiel92/vim-autoformat'
-Plug 'sheerun/vim-polyglot'
+" Declare list of plugin
+" Plug '<PLUGIN_NAME>'
+" For Github plugin     : username/project_id
+" For Not Github plugin : full URL to plugin
+" For local plugin      : file:///path-to-host
+Plug 'Chiel92/vim-autoformat'                           " autoformat
+Plug 'neoclide/coc.nvim', {'branch': 'release'}         " LSP frontend for autocompletion
+Plug 'sheerun/vim-polyglot'                             " syntax highlight
+Plug 'preservim/nerdtree'
+"Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
-Plug 'tpope/vim-vinegar'
 Plug 'junegunn/fzf.vim'
 
-" List ends here. Plugins become visible to Vim after this call
+" List end here. Plugin visible to vim after this call
 call plug#end()
