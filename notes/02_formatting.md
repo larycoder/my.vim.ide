@@ -13,6 +13,7 @@ Below is list of format program installed:
 - astyle            : C, C++, C# and java (main is java)
 - dartfmt           : Dart (Part of Dart SDK)
 - yapf              : Python formatter
+- rustfmt           : Rust formatter
 
 # Map shortcut
 
