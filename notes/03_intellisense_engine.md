@@ -43,3 +43,5 @@ Note: if you install through CocInstall --> stored in "~/.config/coc/extensions/
 4. coc-rls ( for supporting rust -- setup: https://github.com/neoclide/coc-rls )
 5. coc-java (support java -- minimum java11 installed correctly)
 6. coc-html (support html)
+7. coc-json (support json) -- guest
+8. coc-tsserver (support javascript)
