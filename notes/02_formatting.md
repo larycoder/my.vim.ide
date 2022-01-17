@@ -14,6 +14,7 @@ Below is list of format program installed:
 - dartfmt           : Dart (Part of Dart SDK)
 - yapf              : Python formatter
 - rustfmt           : Rust formatter
+- js-beautify       : Js and ts support (npm install -g js-beautify)
 
 # Map shortcut
 
