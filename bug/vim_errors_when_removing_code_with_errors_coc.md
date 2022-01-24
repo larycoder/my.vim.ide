@@ -31,3 +31,4 @@ saved.
 # Fixed ?
 
 [2021-12-07] no
+[2021-01-25] no - but problem caused by vim bug mentioned in [link](https://github.com/neoclide/coc.nvim/issues/3501)
