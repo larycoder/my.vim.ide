@@ -33,6 +33,17 @@ formatter option (hint).
 
 It is nodejs based plugin, but well, it good for me.
 
+# Local coc-setting.json
+
+The project also supports local coc-settings which could be used as workspace
+setting. There are 2 ways to create this setting:
+
+```
+:CocLocalConfig --> prefered by coc.nvim
+
+Create file: ".vim/coc-settings.json" in workspace root --> manually
+```
+
 # Language Server List:
 
 Note: if you install through CocInstall --> stored in "~/.config/coc/extensions/node_modules"
