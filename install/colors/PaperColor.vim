@@ -2294,3 +2294,4 @@ call s:apply_syntax_highlightings()
 " =============================================================================
 " Cheers!
 " vim: fdm=marker ff=unix
+
