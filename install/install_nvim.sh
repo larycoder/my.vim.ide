@@ -31,24 +31,23 @@ function args() {
 function saveConfig() {
     echo "Start to save configuration to vim...";
     VIMDIR=`realpath $VIMDIR`;
-    cp -r ./install/* $VIMDIR/;
-    sed_cmd=$(echo $VIMDIR | sed 's/\//\\\//g');
+    cp -r ./setup/* $VIMDIR/;
+    sed_cmd=$(echo $VIMDIR | sed 's/\//\\\//g' | sed 's/\./\\./g');
     sed_cmd="s/<VIMDIR>/$sed_cmd/g";
-    cat ./install/vimrc | sed "$sed_cmd" > $VIMDIR/vimrc;
-    mkdir $VIMDIR/plugged;
+    sed -i "$sed_cmd" $VIMDIR/vimrc;
+    mv $VIMDIR/vimrc $VIMDIR/init.vim; # neovim call init instead of vimrc
+    if [[ ! -d $VIMDIR/pluged ]]; then mkdir $VIMDIR/pluged; fi;
     echo "Finish save process.";
 }
 
 # call install plugins
 function exeCommand() { # still have big bug
-    echo "Start to exec vim command in command_list...";
-    TEMP=/tmp/.vim_ide_randrom.$;
-    vim -s ./command_list.txt $TEMP;
+    echo "Start to run vim plug...";
+    vim -es -u $VIMDIR/init.vim -i NONE -c "PlugClean" -c "qa";
+    vim -es -u $VIMDIR/init.vim -i NONE -c "PlugInstall" -c "qa";
+    echo "Current version does not support coc.nvim setup, please run it manually...";
     echo "Finish exec command.";
 }
-
-# install necessary packages
-# note: update command_list for install coc.vim plugins.
 
 # driver
 case $1 in
@@ -58,7 +57,7 @@ case $1 in
     *)
         args $@;
         saveConfig;
-        #exeCommand;
+        exeCommand;
         echo "Everything is done.";
         ;;
 esac

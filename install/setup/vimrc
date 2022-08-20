@@ -3,7 +3,7 @@ unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 " load configure in vimrc.d
-for f in split(glob("~/.vim/vimrc.d/*.vim"), '\n')
+for f in split(glob("<VIMDIR>/vimrc.d/*.vim"), '\n')
         exe "source" f
 endfor
 
@@ -11,7 +11,7 @@ endfor
 " Following vim-plug tutorial
 "
 " Plugin download directory
-call plug#begin("~/.vim/pluged")
+call plug#begin("<VIMDIR>/pluged")
 
 " Declare list of plugin
 " Plug '<PLUGIN_NAME>'

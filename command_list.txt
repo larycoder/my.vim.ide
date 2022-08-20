@@ -1,6 +1,0 @@
-:PlugClean
-:q
-:PlugInstall
-:q
-:q
-
