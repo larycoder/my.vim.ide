@@ -1,6 +1,16 @@
 " enable vim default
 unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+if !has('nvim')
+    source $VIMRUNTIME/defaults.vim
+endif
+
+" load plug file
+for f in split(glob("<VIMDIR>/autoload/*.vim"), '\n')
+        exe "source" f
+endfor
+
+" load color file
+set runtimepath+="<VIMDIR>/colors"
 
 " load configure in vimrc.d
 for f in split(glob("<VIMDIR>/vimrc.d/*.vim"), '\n')

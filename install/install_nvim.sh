@@ -43,8 +43,8 @@ function saveConfig() {
 # call install plugins
 function exeCommand() { # still have big bug
     echo "Start to run vim plug...";
-    vim -es -u $VIMDIR/init.vim -i NONE -c "PlugClean" -c "qa";
-    vim -es -u $VIMDIR/init.vim -i NONE -c "PlugInstall" -c "qa";
+    nvim -es -u $VIMDIR/init.vim -i NONE -c "PlugClean" -c "qa";
+    nvim -es -u $VIMDIR/init.vim -i NONE -c "PlugInstall" -c "qa";
     echo "Current version does not support coc.nvim setup, please run it manually...";
     echo "Finish exec command.";
 }
