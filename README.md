@@ -9,3 +9,15 @@ But the default vim is not good option for a developer like me. If writing, I wa
 For moving me Vim IDE to reality, gradually, I will update my script and configuration into this repository (maybe also document - who know).
 
 What I learned that vim document are very very large !!! stick with some target or lost in maze
+
+# QA
+
+1. Where is default configuration folder for neovim ?
+
+It will be in "$HOME/.config/nvim"
+
+2. The neovim color theme is not properly display ?
+
+Try to enable "colorscheme PaperColor" in "vimrc.d/colors_cfg.vim" file. It will
+not be enable by default since it may cause issues but I do not remember what
+are they. However, better to be careful :-)
