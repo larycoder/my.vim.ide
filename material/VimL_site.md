@@ -1,1 +1,0 @@
-https://learnvimscriptthehardway.stevelosh.com
