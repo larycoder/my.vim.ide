@@ -21,3 +21,9 @@ It will be in "$HOME/.config/nvim"
 Try to enable "colorscheme PaperColor" in "vimrc.d/colors_cfg.vim" file. It will
 not be enable by default since it may cause issues but I do not remember what
 are they. However, better to be careful :-)
+
+3. The neovim color theme is not properly display in macos?
+
+NOTE: this is updated version of QA-2.
+
+Beside of setup colorscheme, termguicolors need to be unset also. It is recommended in [neovim issue](https://github.com/neovim/neovim/issues/28927). Do it by enabling "set notermguicolors" in "vimrc.d/colors_cfg.vim". It is disable by default with same reason as QA-2 ;-)
